@@ -26,7 +26,7 @@ library(caret) # ML framework
 library(doParallel) # parallelisation
 
 # Train a Random Forest using caret
-cl = makePSOCKcluster(8)
+cl = makePSOCKcluster(detectCores())
 registerDoParallel(cl)
 set.seed(1234)
 model_rf =
