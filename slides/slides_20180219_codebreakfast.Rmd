@@ -11,7 +11,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-      ratio: "16:10"
+      ratio: "16:9"
       standalone: true
 ---
 
@@ -137,7 +137,7 @@ class: inverse, center, middle
 
 ---
 
-class: center, middle
+class: center, top
 
 <img src="img/marco_lime_fig1.jpg" alt="marco_lime_fig1">
 
@@ -151,7 +151,7 @@ Figure 2. Explaining a model to a human decision-maker. Source: Marco Tulio Ribe
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 # The LIME Framework
 
@@ -160,13 +160,13 @@ class: inverse, center, middle
 ---
 
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/mli_framework.png" alt="mli_framework">
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/mli_explain.png" alt="mli_explain">
 
@@ -197,7 +197,7 @@ class: inverse, center, middle
 ---
 
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/ml_workflow.png" alt="ml_workflow">
 
@@ -783,34 +783,34 @@ class: inverse, center, middle
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/h2o_core_001.png">
 
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/h2o_core_002.png">
 
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/h2o_core_003.png">
 
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/h2o_core_004.png">
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 <img src="img/h2o_cluster_example.jpg">
 

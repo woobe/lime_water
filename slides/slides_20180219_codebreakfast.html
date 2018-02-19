@@ -138,7 +138,7 @@ class: inverse, center, middle
 
 ---
 
-class: center, middle
+class: center, top
 
 &lt;img src="img/marco_lime_fig1.jpg" alt="marco_lime_fig1"&gt;
 
@@ -152,7 +152,7 @@ Figure 2. Explaining a model to a human decision-maker. Source: Marco Tulio Ribe
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 # The LIME Framework
 
@@ -161,13 +161,13 @@ class: inverse, center, middle
 ---
 
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/mli_framework.png" alt="mli_framework"&gt;
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/mli_explain.png" alt="mli_explain"&gt;
 
@@ -198,7 +198,7 @@ class: inverse, center, middle
 ---
 
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/ml_workflow.png" alt="ml_workflow"&gt;
 
@@ -776,14 +776,14 @@ h2o.init(nthreads = -1)
 ##  Connection successful!
 ## 
 ## R is connected to the H2O cluster: 
-##     H2O cluster uptime:         2 days 19 hours 
+##     H2O cluster uptime:         3 days 9 hours 
 ##     H2O cluster timezone:       Europe/London 
 ##     H2O data parsing timezone:  UTC 
 ##     H2O cluster version:        3.18.0.1 
 ##     H2O cluster version age:    6 days  
 ##     H2O cluster name:           H2O_started_from_R_jofaichow_ydb410 
 ##     H2O cluster total nodes:    1 
-##     H2O cluster total memory:   3.89 GB 
+##     H2O cluster total memory:   3.29 GB 
 ##     H2O cluster total cores:    8 
 ##     H2O cluster allowed cores:  8 
 ##     H2O cluster healthy:        TRUE 
@@ -858,16 +858,16 @@ model_automl@leaderboard
 
 ```
 ##                                                model_id
-## 1 StackedEnsemble_BestOfFamily_0_AutoML_20180219_064235
-## 2             GBM_grid_0_AutoML_20180219_064235_model_0
-## 3    StackedEnsemble_AllModels_0_AutoML_20180219_064235
-## 4             GBM_grid_0_AutoML_20180219_064235_model_1
-## 5             GBM_grid_0_AutoML_20180219_064235_model_3
-## 6                          DRF_0_AutoML_20180219_064235
+## 1 StackedEnsemble_BestOfFamily_0_AutoML_20180219_195835
+## 2             GBM_grid_0_AutoML_20180219_195835_model_0
+## 3    StackedEnsemble_AllModels_0_AutoML_20180219_195835
+## 4             GBM_grid_0_AutoML_20180219_195835_model_1
+## 5             GBM_grid_0_AutoML_20180219_195835_model_3
+## 6                          DRF_0_AutoML_20180219_195835
 ##   mean_residual_deviance     rmse      mae    rmsle
-## 1               10.81736 3.288976 2.149675 0.140762
+## 1               10.84287 3.292852 2.151855 0.140915
 ## 2               10.86044 3.295518 2.224282 0.145063
-## 3               10.89431 3.300653 2.161742 0.140959
+## 3               10.91543 3.303851 2.163235 0.141070
 ## 4               11.88445 3.447383 2.285338 0.145858
 ## 5               12.12041 3.481438 2.324986 0.148829
 ## 6               12.22679 3.496683 2.339066 0.148301
@@ -892,39 +892,39 @@ model_automl@leader
 ## ==============
 ## 
 ## H2ORegressionModel: stackedensemble
-## Model ID:  StackedEnsemble_BestOfFamily_0_AutoML_20180219_064235 
+## Model ID:  StackedEnsemble_BestOfFamily_0_AutoML_20180219_195835 
 ## NULL
 ## 
 ## 
 ## H2ORegressionMetrics: stackedensemble
 ## ** Reported on training data. **
 ## 
-## MSE:  0.7958593
-## RMSE:  0.8921095
-## MAE:  0.6584744
-## RMSLE:  0.0446051
-## Mean Residual Deviance :  0.7958593
+## MSE:  0.8388527
+## RMSE:  0.915889
+## MAE:  0.6740673
+## RMSLE:  0.0451058
+## Mean Residual Deviance :  0.8388527
 ## 
 ## 
 ## H2ORegressionMetrics: stackedensemble
 ## ** Reported on validation data. **
 ## 
-## MSE:  6.71778
-## RMSE:  2.591868
-## MAE:  1.743672
-## RMSLE:  0.1363531
-## Mean Residual Deviance :  6.71778
+## MSE:  6.737158
+## RMSE:  2.595604
+## MAE:  1.74355
+## RMSLE:  0.1366309
+## Mean Residual Deviance :  6.737158
 ## 
 ## 
 ## H2ORegressionMetrics: stackedensemble
 ## ** Reported on cross-validation data. **
 ## ** 5-fold cross-validation on training data (Metrics computed for combined holdout predictions) **
 ## 
-## MSE:  10.81736
-## RMSE:  3.288976
-## MAE:  2.149675
-## RMSLE:  0.1407621
-## Mean Residual Deviance :  10.81736
+## MSE:  10.84287
+## RMSE:  3.292852
+## MAE:  2.151855
+## RMSLE:  0.1409147
+## Mean Residual Deviance :  10.84287
 ```
 
 ---
@@ -984,7 +984,7 @@ knitr::kable(d_test, format = "html")
    &lt;td style="text-align:right;"&gt; 392.90 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 3.95 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 31.6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 31.01702 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 31.02489 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:right;"&gt; 0.36920 &lt;/td&gt;
@@ -1001,7 +1001,7 @@ knitr::kable(d_test, format = "html")
    &lt;td style="text-align:right;"&gt; 395.69 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 9.28 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 23.8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 22.86415 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.91670 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:right;"&gt; 0.04932 &lt;/td&gt;
@@ -1018,7 +1018,7 @@ knitr::kable(d_test, format = "html")
    &lt;td style="text-align:right;"&gt; 396.90 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 7.53 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 28.2 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 30.07423 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 30.13234 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:right;"&gt; 0.26938 &lt;/td&gt;
@@ -1035,7 +1035,7 @@ knitr::kable(d_test, format = "html")
    &lt;td style="text-align:right;"&gt; 393.39 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 7.90 &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 21.6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.98239 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.02114 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1076,17 +1076,17 @@ head(explainations, 5)
 
 ```
 ##   model_type case  model_r2 model_intercept model_prediction feature
-## 1 regression    1 0.6315333        20.38476         35.41604    crim
-## 2 regression    1 0.6315333        20.38476         35.41604      rm
-## 3 regression    1 0.6315333        20.38476         35.41604   lstat
-## 4 regression    1 0.6315333        20.38476         35.41604     dis
-## 5 regression    1 0.6315333        20.38476         35.41604     tax
+## 1 regression    1 0.6317351        20.44714         35.20731       b
+## 2 regression    1 0.6317351        20.44714         35.20731      rm
+## 3 regression    1 0.6317351        20.44714         35.20731   lstat
+## 4 regression    1 0.6317351        20.44714         35.20731     dis
+## 5 regression    1 0.6317351        20.44714         35.20731     tax
 ##   feature_value feature_weight   feature_desc
-## 1       0.01432      0.2610387 crim &lt;= 0.0823
-## 2       6.81600      9.7661035      6.62 &lt; rm
-## 3       3.95000      5.6211713  lstat &lt;= 6.95
-## 4       8.32480     -1.9773211     5.19 &lt; dis
-## 5     256.00000      1.3602842     tax &lt;= 279
+## 1      392.9000    0.001085588 391 &lt; b &lt;= 396
+## 2        6.8160    9.736177205      6.62 &lt; rm
+## 3        3.9500    5.587370832  lstat &lt;= 6.95
+## 4        8.3248   -1.911507395     5.19 &lt; dis
+## 5      256.0000    1.347043279     tax &lt;= 279
 ##                                                                                                                          data
 ## 1 0.01432, 100.00000, 1.32000, 1.00000, 0.41100, 6.81600, 40.50000, 8.32480, 5.00000, 256.00000, 15.10000, 392.90000, 3.95000
 ## 2 0.01432, 100.00000, 1.32000, 1.00000, 0.41100, 6.81600, 40.50000, 8.32480, 5.00000, 256.00000, 15.10000, 392.90000, 3.95000
@@ -1094,11 +1094,11 @@ head(explainations, 5)
 ## 4 0.01432, 100.00000, 1.32000, 1.00000, 0.41100, 6.81600, 40.50000, 8.32480, 5.00000, 256.00000, 15.10000, 392.90000, 3.95000
 ## 5 0.01432, 100.00000, 1.32000, 1.00000, 0.41100, 6.81600, 40.50000, 8.32480, 5.00000, 256.00000, 15.10000, 392.90000, 3.95000
 ##   prediction
-## 1   31.01702
-## 2   31.01702
-## 3   31.01702
-## 4   31.01702
-## 5   31.01702
+## 1   31.02489
+## 2   31.02489
+## 3   31.02489
+## 4   31.02489
+## 5   31.02489
 ```
 
 
@@ -1206,14 +1206,14 @@ h2o.init(nthreads = -1)
 ##  Connection successful!
 ## 
 ## R is connected to the H2O cluster: 
-##     H2O cluster uptime:         2 days 19 hours 
+##     H2O cluster uptime:         3 days 9 hours 
 ##     H2O cluster timezone:       Europe/London 
 ##     H2O data parsing timezone:  UTC 
 ##     H2O cluster version:        3.18.0.1 
 ##     H2O cluster version age:    6 days  
 ##     H2O cluster name:           H2O_started_from_R_jofaichow_ydb410 
 ##     H2O cluster total nodes:    1 
-##     H2O cluster total memory:   3.83 GB 
+##     H2O cluster total memory:   3.23 GB 
 ##     H2O cluster total cores:    8 
 ##     H2O cluster allowed cores:  8 
 ##     H2O cluster healthy:        TRUE 
@@ -1289,12 +1289,12 @@ model_automl@leaderboard
 
 ```
 ##                                     model_id mean_per_class_error
-## 1  GBM_grid_0_AutoML_20180219_064309_model_3             0.304868
-## 2  GBM_grid_0_AutoML_20180219_064309_model_2             0.304868
-## 3  GBM_grid_0_AutoML_20180219_064309_model_1             0.304868
-## 4  GBM_grid_0_AutoML_20180219_064309_model_0             0.343727
-## 5 GBM_grid_0_AutoML_20180219_064309_model_12             0.347430
-## 6               XRT_0_AutoML_20180219_064309             0.351009
+## 1  GBM_grid_0_AutoML_20180219_195906_model_1             0.304868
+## 2  GBM_grid_0_AutoML_20180219_195906_model_3             0.304868
+## 3  GBM_grid_0_AutoML_20180219_195906_model_2             0.304868
+## 4  GBM_grid_0_AutoML_20180219_195906_model_0             0.343727
+## 5 GBM_grid_0_AutoML_20180219_195906_model_12             0.347430
+## 6               XRT_0_AutoML_20180219_195906             0.351009
 ## 
 ## [22 rows x 2 columns]
 ```
@@ -1315,12 +1315,12 @@ model_automl@leader
 ## ==============
 ## 
 ## H2OMultinomialModel: gbm
-## Model ID:  GBM_grid_0_AutoML_20180219_064309_model_3 
+## Model ID:  GBM_grid_0_AutoML_20180219_195906_model_1 
 ## Model Summary: 
 ##   number_of_trees number_of_internal_trees model_size_in_bytes min_depth
-## 1              44                      264               50484         1
+## 1              44                      264               49593         1
 ##   max_depth mean_depth min_leaves max_leaves mean_leaves
-## 1        10    6.29545          2         13    10.26515
+## 1         7    6.10606          2         13     9.99242
 ## 
 ## 
 ## H2OMultinomialMetrics: gbm
@@ -1329,10 +1329,10 @@ model_automl@leader
 ## Training Set Metrics: 
 ## =====================
 ## 
-## Extract training frame with `h2o.getFrame("automl_training_file136b76df013a3_sid_9a73_12")`
-## MSE: (Extract with `h2o.mse`) 0.01203013
-## RMSE: (Extract with `h2o.rmse`) 0.1096819
-## Logloss: (Extract with `h2o.logloss`) 0.08297804
+## Extract training frame with `h2o.getFrame("automl_training_file9053629ae94_sid_920b_12")`
+## MSE: (Extract with `h2o.mse`) 0.01236951
+## RMSE: (Extract with `h2o.rmse`) 0.1112183
+## Logloss: (Extract with `h2o.logloss`) 0.08444432
 ## Mean Per-Class Error: 0
 ## Confusion Matrix: Extract with `h2o.confusionMatrix(&lt;model&gt;,train = TRUE)`)
 ## =========================================================================
@@ -1364,28 +1364,28 @@ model_automl@leader
 ## Validation Set Metrics: 
 ## =====================
 ## 
-## Extract validation frame with `h2o.getFrame("automl_validation_file136b76df013a3_sid_9a73_12")`
-## MSE: (Extract with `h2o.mse`) 0.1012058
-## RMSE: (Extract with `h2o.rmse`) 0.3181286
-## Logloss: (Extract with `h2o.logloss`) 0.3181281
-## Mean Per-Class Error: 0.1944444
+## Extract validation frame with `h2o.getFrame("automl_validation_file9053629ae94_sid_920b_12")`
+## MSE: (Extract with `h2o.mse`) 0.1054444
+## RMSE: (Extract with `h2o.rmse`) 0.3247221
+## Logloss: (Extract with `h2o.logloss`) 0.3313037
+## Mean Per-Class Error: 0.202381
 ## Confusion Matrix: Extract with `h2o.confusionMatrix(&lt;model&gt;,valid = TRUE)`)
 ## =========================================================================
 ## Confusion Matrix: Row labels: Actual class; Column labels: Predicted class
 ##         1  2 3 5 6 7  Error     Rate
-## 1      19  1 1 0 0 0 0.0952 = 2 / 21
+## 1      18  1 2 0 0 0 0.1429 = 3 / 21
 ## 2       0 13 1 0 0 0 0.0714 = 1 / 14
 ## 3       1  0 0 0 0 0 1.0000 =  1 / 1
 ## 5       0  0 0 3 0 0 0.0000 =  0 / 3
 ## 6       0  0 0 0 2 0 0.0000 =  0 / 2
 ## 7       0  0 0 0 0 4 0.0000 =  0 / 4
-## Totals 20 14 2 3 2 4 0.0889 = 4 / 45
+## Totals 19 14 3 3 2 4 0.1111 = 5 / 45
 ## 
 ## Hit Ratio Table: Extract with `h2o.hit_ratio_table(&lt;model&gt;,valid = TRUE)`
 ## =======================================================================
 ## Top-6 Hit Ratios: 
 ##   k hit_ratio
-## 1 1  0.911111
+## 1 1  0.888889
 ## 2 2  0.977778
 ## 3 3  1.000000
 ## 4 4  1.000000
@@ -1400,20 +1400,20 @@ model_automl@leader
 ## Cross-Validation Set Metrics: 
 ## =====================
 ## 
-## Extract cross-validation frame with `h2o.getFrame("automl_training_file136b76df013a3_sid_9a73_12")`
-## MSE: (Extract with `h2o.mse`) 0.2358623
-## RMSE: (Extract with `h2o.rmse`) 0.4856566
-## Logloss: (Extract with `h2o.logloss`) 0.8485839
+## Extract cross-validation frame with `h2o.getFrame("automl_training_file9053629ae94_sid_920b_12")`
+## MSE: (Extract with `h2o.mse`) 0.2347763
+## RMSE: (Extract with `h2o.rmse`) 0.4845372
+## Logloss: (Extract with `h2o.logloss`) 0.8396672
 ## Mean Per-Class Error: 0.3048682
 ## Hit Ratio Table: Extract with `h2o.hit_ratio_table(&lt;model&gt;,xval = TRUE)`
 ## =======================================================================
 ## Top-6 Hit Ratios: 
 ##   k hit_ratio
 ## 1 1  0.751515
-## 2 2  0.903030
-## 3 3  0.957576
-## 4 4  0.981818
-## 5 5  0.993939
+## 2 2  0.896970
+## 3 3  0.963636
+## 4 4  0.975758
+## 5 5  1.000000
 ## 6 6  1.000000
 ## 
 ## 
@@ -1422,24 +1422,24 @@ model_automl@leader
 ## accuracy                0.75151515 0.036865227  0.6969697  0.8484849
 ## err                     0.24848485 0.036865227  0.3030303 0.15151516
 ## err_count                      8.2   1.2165525       10.0        5.0
-## logloss                 0.84858394  0.22416058 0.88758767 0.50383687
+## logloss                 0.83966726  0.21647851 0.88503957 0.50393355
 ## max_per_class_error      0.8333333   0.1490712        1.0  0.6666667
 ## mean_per_class_accuracy 0.69882154 0.046146758  0.6166667      0.775
 ## mean_per_class_error    0.30117846 0.046146758 0.38333333      0.225
-## mse                     0.23586234 0.032745183 0.28602317 0.16430537
-## r2                      0.92122924 0.011236232  0.9035668 0.94460416
-## rmse                    0.48318726  0.03458625  0.5348113   0.405346
+## mse                     0.23477626 0.032801747  0.2828518 0.16425242
+## r2                      0.92158896 0.011259812   0.904636 0.94462204
+## rmse                    0.48204842 0.034681287  0.5318381 0.40528068
 ##                         cv_3_valid cv_4_valid cv_5_valid
 ## accuracy                0.72727275 0.72727275 0.75757575
 ## err                     0.27272728 0.27272728 0.24242425
 ## err_count                      9.0        9.0        8.0
-## logloss                  1.4225535  0.8058327 0.62310886
+## logloss                  1.3888613 0.80705595  0.6134459
 ## max_per_class_error            1.0        0.5        1.0
 ## mean_per_class_accuracy 0.66818184 0.77685183  0.6574074
 ## mean_per_class_error     0.3318182 0.22314815  0.3425926
-## mse                     0.28277954 0.23982124  0.2063824
-## r2                      0.90442365  0.9212883 0.93226326
-## rmse                    0.53177017 0.48971546 0.45429328
+## mse                     0.28406885  0.2398556  0.2028526
+## r2                       0.9039879 0.92127705  0.9334218
+## rmse                     0.5329811 0.48975056 0.45039162
 ```
 
 ---
@@ -1456,15 +1456,15 @@ head(yhat_test)
 
 ```
 ##   predict         p1        p2          p3          p5          p6
-## 1       1 0.48905008 0.1666208 0.324915505 0.005839232 0.005865232
-## 2       2 0.04100466 0.9440974 0.008742662 0.001362321 0.001367279
-## 3       5 0.02860819 0.2055182 0.014776797 0.705273483 0.036432625
-## 4       2 0.02329044 0.8573997 0.011031539 0.083977413 0.003666561
+## 1       1 0.69766464 0.1366174 0.148579127 0.005158348 0.005166471
+## 2       2 0.07421280 0.9013498 0.016233923 0.001808263 0.001817319
+## 3       5 0.03841663 0.2580827 0.025503540 0.623656176 0.043140391
+## 4       2 0.02248331 0.8882036 0.006976351 0.063091421 0.002743069
 ##            p7
-## 1 0.007709192
-## 2 0.003425725
-## 3 0.009390700
-## 4 0.020634392
+## 1 0.006813970
+## 2 0.004577877
+## 3 0.011200592
+## 4 0.016502271
 ```
 
 
@@ -1523,34 +1523,34 @@ class: inverse, center, middle
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/h2o_core_001.png"&gt;
 
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/h2o_core_002.png"&gt;
 
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/h2o_core_003.png"&gt;
 
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/h2o_core_004.png"&gt;
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, top
 
 &lt;img src="img/h2o_cluster_example.jpg"&gt;
 
@@ -1632,7 +1632,7 @@ Slides created via the R package [**xaringan**](https://github.com/yihui/xaringa
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
-"ratio": "16:10",
+"ratio": "16:9",
 "standalone": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
